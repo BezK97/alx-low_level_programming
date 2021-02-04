@@ -23,6 +23,7 @@ int main(void)
 			}
 			num2++;
 		}
+		num2 = '0';
 		num1++;
 	}
 	putchar('\n');
