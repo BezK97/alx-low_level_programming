@@ -14,7 +14,7 @@ int main(void)
 	{
 		while (num2 <= '9')
 		{
-			if ((num1 != num2))
+			if (num1 != num2)
 			{
 				putchar(num1);
 				putchar(num2);
