@@ -7,7 +7,8 @@
  */
 int main(void)
 {
-	int num1, num2 = '0';
+	int num1 = '0';
+	int num2 = '0';
 
 	while (num1 <= '9')
 	{
@@ -16,7 +17,7 @@ int main(void)
 			putchar(num1);
 			putchar(num2);
 
-			if ((num2 != '9') || (num1 != '9'))
+			if ((num1 != '9') || (num2 != '9'))
 			{
 				putchar(',');
 				putchar(' ');
