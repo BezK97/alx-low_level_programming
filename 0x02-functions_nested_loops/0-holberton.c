@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "holberton.h"
 
 /**
@@ -20,5 +21,6 @@ int main(void)
 	_putchar('o');
 	_putchar('n');
 	_putchae('\n');
+
 	return (0);
 }
