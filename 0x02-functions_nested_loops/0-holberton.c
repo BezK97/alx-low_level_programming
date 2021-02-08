@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "function_declare.h"
+#include "holberton.h"
 
 /**
  * main - Entry point
