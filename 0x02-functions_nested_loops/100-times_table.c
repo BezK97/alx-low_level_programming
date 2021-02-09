@@ -2,7 +2,7 @@
 #include "holberton.h"
 
 /**
- * times_table - prints n times table
+ * print_times_table - prints n times table
  *
  * @n: time table dimension
  *
