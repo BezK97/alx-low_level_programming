@@ -6,6 +6,7 @@
  *
  * void: no argument
  */
+void sum_of_multiple(void);
 void sum_of_multiple(void)
 {
 	int num1, num2;
@@ -26,4 +27,9 @@ void sum_of_multiple(void)
 
 	total = result1 + result2;
 	printf("%d\n", total);
+}
+
+int main(void)
+{
+	sum_of_multiple();
 }
