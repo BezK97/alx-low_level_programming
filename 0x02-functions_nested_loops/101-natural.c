@@ -1,29 +1,28 @@
 #include <stdio.h>
-#include "holberton.h"
 
 /**
  * main- prints sum of multiple of 5 and 3 below 1024
  *
- * void: no argument
+ * Return: 0
  */
 int main(void)
 {
-	int num1, num2;
-	int result1, result2;
-	int addition1, addition2 = 0;
-	int total;
+	int num, num2 = 1;
+	int result, result2 = 0;
+	int tota, total2 = 0;
 
-	for (num1 = 1; result1 < 1024; num1++)
+	while (result < 1024)
 	{
-		result1 = num1 * 3;
-		addition1 += result1;
+		result = num * 3;
+		total = total + result;
+		num++;
 	}
-	for (num2 = 1; result2 < 1024; num2++)
+	while (result2 < 1024)
 	{
 		result2 = num2 * 5;
-		addition2 += result2;
+		total2 = total2 + result2;
+		num2++;
 	}
-
-	total = result1 + result2;
-	printf("%d\n", total);
+	printf("%d\n", total + total2);
+	return (0);
 }
