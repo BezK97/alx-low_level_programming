@@ -2,12 +2,11 @@
 #include "holberton.h"
 
 /**
- * sum_of_multiple - prints sum of multiple of 5 and 3 below 1024
+ * main- prints sum of multiple of 5 and 3 below 1024
  *
  * void: no argument
  */
-void sum_of_multiple(void);
-void sum_of_multiple(void)
+int main(void)
 {
 	int num1, num2;
 	int result1, result2;
@@ -27,9 +26,4 @@ void sum_of_multiple(void)
 
 	total = result1 + result2;
 	printf("%d\n", total);
-}
-
-int main(void)
-{
-	sum_of_multiple();
 }
