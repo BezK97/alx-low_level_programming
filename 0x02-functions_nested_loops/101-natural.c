@@ -7,22 +7,16 @@
  */
 int main(void)
 {
-	int num, num2 = 1;
-	int result, result2 = 0;
-	int tota, total2 = 0;
+	int total = 0;
+	int num;
 
-	while (result < 1024)
+	for (num = 1; num < 1024; num++)
 	{
-		result = num * 3;
-		total = total + result;
-		num++;
+		if (x % 3 == 0 || x % 5 == 0)
+		{
+			total += num;
+		}
 	}
-	while (result2 < 1024)
-	{
-		result2 = num2 * 5;
-		total2 = total2 + result2;
-		num2++;
-	}
-	printf("%d\n", total + total2);
+	printf("%d\n", total);
 	return (0);
 }
