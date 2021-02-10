@@ -13,13 +13,13 @@ int main(void)
 	long int tmp_2 = 1;
 	long int num = 1;
 
-	for (count = 1; count <= 50; count++)
+	for (count = 0; count <= 50; count++)
 	{
-		if (count > 1)
+		if (count > 0)
 		{
 			printf("%ld", num);
 		}
-		if (count < 50 && count > 1)
+		if (count < 50 && count > 0)
 		{
 			printf(", ");
 		}
