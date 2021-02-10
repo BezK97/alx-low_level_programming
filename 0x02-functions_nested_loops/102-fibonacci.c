@@ -6,7 +6,7 @@
  *
  * Return: Always 0
  */
-int main(void);
+int main(void)
 {
 	long int count;
 	long int tmp_1 = 0;
