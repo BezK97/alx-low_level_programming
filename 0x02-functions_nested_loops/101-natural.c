@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main- prints sum of multiple of 5 and 3 below 1024
+ * main - prints sum of multiple of 5 and 3 below 1024
  *
  * Return: 0
  */
@@ -12,7 +12,7 @@ int main(void)
 
 	for (num = 1; num < 1024; num++)
 	{
-		if (x % 3 == 0 || x % 5 == 0)
+		if (num % 3 == 0 || num % 5 == 0)
 		{
 			total += num;
 		}
