@@ -18,7 +18,7 @@ int main(void)
 		}
 		if (prime == 1)
 		{
-			printf("%ld\n", prime);
+			printf("%ld\n", factor);
 		}
 		factor++;
 	}
