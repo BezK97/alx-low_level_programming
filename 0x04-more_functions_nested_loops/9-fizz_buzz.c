@@ -2,7 +2,8 @@
 
 /**
  * main - print numbers 1 through 100, multiple of 3 replaced by Fizz
- * multiple of 5 replaced by Buzz, multiple of both 3 and 5 replaced by FizzBuzz
+ * multiple of 5 replaced by Buzz
+ * multiple of both 3 and 5 replaced by FizzBuzz
  *
  * Return: 0
  */
@@ -35,4 +36,5 @@ int main(void)
 		num++;
 	}
 	printf("\n");
+	return (0);
 }
