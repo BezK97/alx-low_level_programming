@@ -7,17 +7,20 @@
  */
 int main(void)
 {
-	long int num = 612852475143;
-	long int factor = 1;
-	long int prime;
+	long int prime = 612852475143;
+	long int factor = 2;
 
-	while (factor < num)
+	while (prime != 1)
 	{
-		if (factor % num == 0)
+		if (prime % factor == 0)
 		{
-			prime = factor / num;
+			prime = prime / factor;
+		}
+		if (prime == 1)
+		{
+			printf("ld\n", prime);
 		}
 		factor++;
 	}
-	printf("ld\n", prime);
+	return (0);
 }
