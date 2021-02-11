@@ -7,7 +7,7 @@
  */
 void more_numbers(void)
 {
-	int count = 0;
+	int count = 1;
 	int num, half_1, half_2;
 
 	while (count <= 10)
