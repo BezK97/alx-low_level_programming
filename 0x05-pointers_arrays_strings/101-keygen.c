@@ -21,7 +21,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%d", password % 10);
+			printf("%d", password);
 		}
 		len++;
 	}
