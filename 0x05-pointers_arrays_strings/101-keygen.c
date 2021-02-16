@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	int len = 0, pssword
+	int len = 0, password;
 
 	while (len < 9)
 	{
@@ -20,9 +20,9 @@ int main(void)
 		}
 		else
 		{
-			printf("%d", d % 10);
+			printf("%d", password % 10);
 		}
-		num++;
+		len++;
 	}
 	return (0);
 }
