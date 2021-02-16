@@ -18,5 +18,5 @@ int main(void)
 		password[num] = (rand() % 9);
 		num++;
 	}
-	return (num);
+	return (password);
 }
