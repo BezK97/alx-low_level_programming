@@ -11,7 +11,8 @@ int main(void)
 {
 	int len = 0, password;
 
-	while (len < 9)
+	srand(time(0));
+	while (len < 8)
 	{
 		password = rand() % 123;
 		if ((password >= 65 && password <= 90) || password >= 97)
