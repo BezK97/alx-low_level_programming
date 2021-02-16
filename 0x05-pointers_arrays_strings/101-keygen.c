@@ -18,7 +18,7 @@ int main(void)
 		if ((password >= 65 && password <= 90) || password >= 97
 		    || (password >= 33 && password <= 47)
 		    || (password >= 58 && password <= 64)
-		    || (password >= 91 && password <= 96)
+		    || (password >= 91 && password <= 96))
 		{
 			printf("%c", (char)password);
 		}
