@@ -9,14 +9,20 @@
  */
 int main(void)
 {
-	int num = 0;
-	char pssword[9];
+	int len = 0, pssword
 
-	srand((unsigned int)(time(NULL)));
-	while (num < 9)
+	while (len < 9)
 	{
-		password[num] = (rand() % 9);
+		password = rand() % 123;
+		if ((password >= 65 && password <= 90) || password >= 97)
+		{
+			printf("%c", (char)password);
+		}
+		else
+		{
+			printf("%d", d % 10);
+		}
 		num++;
 	}
-	return (password);
+	return (0);
 }
