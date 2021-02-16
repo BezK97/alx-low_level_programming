@@ -13,7 +13,7 @@ int main(void)
 
 	srand(time(NULL));
 	password = rand() % 122;
-	while (len <= 2772 - 122)
+	while (len < 8)
 	{
 		if ((password >= 65 && password <= 90) || password >= 97)
 		{
