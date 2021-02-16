@@ -11,7 +11,7 @@ int main(void)
 {
 	int len = 0, password;
 
-	srand(time(0));
+	srand(time(NULL));
 	while (len < 12)
 	{
 		password = rand() % 122;
