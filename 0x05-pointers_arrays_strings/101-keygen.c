@@ -25,5 +25,6 @@ int main(void)
 		}
 		len++;
 	}
+	printf("\n");
 	return (0);
 }
