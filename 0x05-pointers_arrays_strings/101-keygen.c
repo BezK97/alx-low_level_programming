@@ -13,6 +13,7 @@ int main(void)
 	while (num < 10000000)
 	{
 		num = (rand() % 99999999 + 1);
+		num++;
 	}
 	return (num);
 }
