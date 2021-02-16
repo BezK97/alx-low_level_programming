@@ -12,7 +12,7 @@ int main(void)
 	int len = 0, password;
 
 	srand(time(0));
-	while (len < 8)
+	while (len < 12)
 	{
 		password = rand() % 122;
 		if ((password >= 65 && password <= 90) || password >= 97)
@@ -21,7 +21,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%d", password);
+			printf("%d", password % 10);
 		}
 		len++;
 	}
