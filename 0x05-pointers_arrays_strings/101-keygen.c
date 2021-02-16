@@ -9,12 +9,13 @@
  */
 int main(void)
 {
-	int num;
+	int num = 0;
+	char pssword[9];
 
-	srand(time(NULL));
-	while (num < 10000000)
+	srand((unsigned int)(time(NULL)));
+	while (num < 9)
 	{
-		num = (rand() % 99999999 + 1);
+		password[num] = (rand() % 9);
 		num++;
 	}
 	return (num);
