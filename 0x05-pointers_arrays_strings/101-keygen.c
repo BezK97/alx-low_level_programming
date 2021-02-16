@@ -15,10 +15,7 @@ int main(void)
 	while (len < 128)
 	{
 		password = rand() % 122;
-		if ((password >= 65 && password <= 90) || password >= 97
-		    || (password >= 33 && password <= 47)
-		    || (password >= 58 && password <= 64)
-		    || (password >= 91 && password <= 96))
+		if ((password >= 65 && password <= 90) || password >= 97)
 		{
 			printf("%c", (char)password);
 		}
