@@ -18,8 +18,8 @@ char *cap_string(char *str)
 	{
 		while (*(sep + len2) != '\0')
 		{
-			if (*(str + len) == *(sep + len2) && *(str + len + 1)
-			    >= 'a' && *(str + len + 1) <= 122)
+			if (*(str + len) == *(sep + len2) && (*(str + len + 1)
+>= 'a' && *(str + len + 1) <= 'z'))
 			{
 				*(str + len + 1) = *(str + len + 1) - 32;
 			}
