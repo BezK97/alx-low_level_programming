@@ -10,7 +10,7 @@
 char *cap_string(char *str)
 {
 	int len = 0;
-	int len = 0;
+	int len2 = 0;
 	char sep[14] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')'
 			, '{', '}', '\0'};
 
