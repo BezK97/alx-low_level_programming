@@ -19,15 +19,10 @@ unsigned int _strspn(char *s, char *accept)
 		while (*(s + len2) != '\0')
 		{
 			if (*(accept + len) == *(s + len2))
-				break;
+				return (count + 1);
 			count++;
 			len2++;
 		}
-		if (*(accept + len) == *(s + len2))
-			break;
 	}
-	if (*(accept + len) == *(s + len2))
-		return (count + 1);
-	else
-		return (count);
+	return (count);
 }
