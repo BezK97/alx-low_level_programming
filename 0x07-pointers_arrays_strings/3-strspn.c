@@ -24,5 +24,7 @@ unsigned int _strspn(char *s, char *accept)
 			len2++;
 		}
 	}
+	if (*(accept + len) != *(s + len))
+		return (0);
 	return (count);
 }
