@@ -1,5 +1,5 @@
 #include "holberton.h"
-
+#include <stddef.h>
 /**
  * _strchr - points to the first occurance of a character
  *
@@ -15,8 +15,8 @@ char *_strchr(char *s, char c)
 	while (*(s + len) != '\0')
 	{
 		if (*(s + len) == c)
-			break;
+			return ((s + len));
 		len++;
 	}
-	return ((s + len));
+	return (NULL);
 }
