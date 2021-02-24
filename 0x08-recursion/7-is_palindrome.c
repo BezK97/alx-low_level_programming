@@ -12,7 +12,7 @@ int length(char *s)
 	if (*s == '\0')
 		return (0);
 	s++;
-	return(length(s) + 1);
+	return (length(s) + 1);
 }
 
 /**
