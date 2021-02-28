@@ -23,7 +23,10 @@ int main(int argc, char *argv[])
 	}
 	left = atoi(argv[1]);
 	if (left < 0)
+	{
 		printf("%d\n", 0);
+		return (0);
+	}
 	while (count < 5)
 	{
 		count2 = count;
