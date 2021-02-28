@@ -1,4 +1,4 @@
-#include <stdio.h>
+B#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -22,6 +22,8 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	left = atoi(argv[1]);
+	if (left < 0)
+		return (0);
 	while (count < 5)
 	{
 		count2 = count;
