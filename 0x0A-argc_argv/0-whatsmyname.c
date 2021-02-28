@@ -10,5 +10,7 @@
  */
 int main(int argc, char *argv);
 {
-	printf("%s\n", argv[argc-argc]);
+	if (argc >= 1)
+		_putchar(argv[argc - argc + count]);
+	return (0);
 }
