@@ -1,4 +1,4 @@
-#include <stdio.h>
+B#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	left = atoi(argv[1]);
-	if (left < 0)
+	if (left <= 0)
 	{
 		printf("%d\n", 0);
 		return (0);
