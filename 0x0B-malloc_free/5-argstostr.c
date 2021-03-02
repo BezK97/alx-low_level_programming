@@ -17,14 +17,17 @@ char *argstostr(int ac, char **av)
 	if (ac <= 0 || av == NULL)
 		return (NULL);
 	for (count = 0; count < ac; count++)
+	{
 		for (count2 = 0; ac[count][count2]; count2)
 			count3++;
+	}
 	str = malloc((count3 + count + 1) * sizeof(char));
 	if (str == NULL)
 		return (NULL);
+	count3 = 0;
 	for (count = 0; count < ac; count++)
 	{
-		for (count2 = 0, count3 = 0; av[count][count2]; count2++)
+		for (count2 = 0; av[count][count2]; count2++)
 		{
 			str[count3] = av[count][count2];
 			count3++;
