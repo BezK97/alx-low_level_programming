@@ -1,4 +1,4 @@
-#include "holberton.h"
+B#include "holberton.h"
 #include <stdlib.h>
 
 /**
@@ -18,7 +18,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	for (count = 0; count < ac; count++)
 	{
-		for (count2 = 0; ac[count][count2]; count2++)
+		for (count2 = 0; av[count][count2]; count2++)
 			count3++;
 	}
 	str = malloc((count3 + count + 1) * sizeof(char));
