@@ -19,8 +19,11 @@ char *_strdup(char *str)
 	str_cpy = malloc(size * sizeof(str));
 	if (str == NULL || str_cpy == NULL)
 		return (NULL);
-	for (; count < size; count++)
-		str_cpy[count] = str[count];
+	if (str_cpy != NULL)
+	{
+		for (; count < size; count++)
+			str_cpy[count] = str[count];
+	}
 	str_cpy[count] = '\0';
 	return (str_cpy);
 }
