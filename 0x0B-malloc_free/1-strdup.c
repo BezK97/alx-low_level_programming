@@ -11,19 +11,17 @@
 char *_strdup(char *str)
 {
 	unsigned int size;
-	unsigned int count = 0;
 	char *str_cpy;
 
+	if (str == NULL)
+		return (NULL);
 	for (size = 0; str[size] != '\0';)
 		size++;
 	str_cpy = malloc(size * sizeof(str));
-	if (str == NULL || str_cpy == NULL)
+	if (str_cpy == NULL)
 		return (NULL);
-	if (str_cpy != NULL)
-	{
-		for (; count < size; count++)
-			str_cpy[count] = str[count];
-	}
-	str_cpy[count] = '\0';
+	for (size = 0; str_cpy[size]; size++)
+		str_cpy[size] = str[size];
+	str_cpy[size] = '\0';
 	return (str_cpy);
 }
