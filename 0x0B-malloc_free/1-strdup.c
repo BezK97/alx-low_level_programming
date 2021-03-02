@@ -26,6 +26,6 @@ char *_strdup(char *str)
 
 	for (size = 0; str[size] != '\0'; size++)
 		str_cpy[size] = str[size];
-
+	str_cpy[size] = '\0';
 	return (str_cpy);
 }
