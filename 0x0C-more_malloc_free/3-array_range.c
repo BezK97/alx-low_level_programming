@@ -1,0 +1,19 @@
+#include "holberton.h"
+#include <stdlib.h>
+
+int *array_range(int min, int max)
+{
+	int *array;
+	int count;
+
+	if (min > max)
+		return (NULL);
+
+	array = malloc(sizeof(int) * (max - min + 2));
+	if (array == NULL)
+		return (NULL);
+
+	for (count = 0; min <= max; count++, min++)
+		array[count] = min;
+	return (array);
+}
