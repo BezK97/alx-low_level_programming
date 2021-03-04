@@ -1,6 +1,14 @@
 #include "holberton.h"
 #include <stdlib.h>
 
+/**
+ * array_range - create an integer array containing values from min to max
+ *
+ * @min: minimum
+ * @max: maximum
+ *
+ * Return: array
+ */
 int *array_range(int min, int max)
 {
 	int *array;
