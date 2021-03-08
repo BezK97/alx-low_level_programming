@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "dog.h"
 
 /**
@@ -38,13 +39,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 
 	mem->name = malloc(sizeof(name) + 1);
-	if (name == NULL)
+	if (mem->name == NULL)
 	{
 		free(mem);
 		return (NULL);
 	}
 
-	mem->owner == malloc(sizeof(owner) + 1);
+	mem->owner = malloc(sizeof(owner) + 1);
 	if (name == NULL)
 	{
 		free(mem->name);
