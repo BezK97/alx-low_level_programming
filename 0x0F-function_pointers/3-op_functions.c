@@ -61,7 +61,7 @@ int op_div(int a, int b)
 
 /**
  * op_mod - find remainder of the division of a by b
- * 
+ *
  * @a: first number
  * @b: second number
  *
