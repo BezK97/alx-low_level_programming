@@ -1,15 +1,15 @@
-	msg db "Hello, Holberton", 0
-	fmt db "%s", 10, 0
+global main
+extern printf
 
-	global main
-	extern printf
-
+	section .text
 main:
-	mov esi, msg
-	mov edi, fmt
-	mov eax, 0
+	push rbp
+	mov rdi, format
+	mov rsi, message
+	mov rax, 0
 	call printf
-
-	mov ebx, 0
-	mov eax, 1
-	int 0x80
+	pop rbp
+	mov rax, 0
+	ret
+message: db "Hello, Holberton", 0
+format:	db "%s", 10, 0
