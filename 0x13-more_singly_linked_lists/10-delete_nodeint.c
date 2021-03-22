@@ -24,9 +24,9 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	{
 		*head = (*tmp).next;
 		free(tmp);
-		return(1);
+		return (1);
 	}
-	for (count = 0; count < index ;count++)
+	for (count = 0; count < index ; count++)
 	{
 		tmp2 = tmp;
 		tmp = (*tmp).next;
