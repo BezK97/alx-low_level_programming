@@ -33,13 +33,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (new);
 	}
 
-	for (; tmp != NULL; count++)
-		tmp = (*tmp).next;
-	tmp = *head;
-	if (idx >= count)
-		return (NULL);
-
-	for (count = 0, idx--; count < idx; count++)
+	for (idx--; count < idx; count++)
 	{
 		tmp = (*tmp).next;
 		if (tmp == NULL)
