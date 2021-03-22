@@ -13,9 +13,9 @@ void free_listint2(listint_t **head)
 	{
 		while (tmp2 != NULL)
 		{
-			tmp = (*tmp2).next;
-			free(tmp2);
-			tmp2 = tmp;
+			tmp = tmp2;
+			tmp2 = (*tmp2).next;
+			free(tmp);
 		}
 		*head = NULL;
 	}
