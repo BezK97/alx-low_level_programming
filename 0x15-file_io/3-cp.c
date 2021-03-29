@@ -19,13 +19,13 @@ int main(int argc, char *argv[])
 	if (file_from < 0)
 	{
 		dprintf(STDERR_FILENO,
-			"Error: Can't read from file %s\n", argv[0]);
+			"Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	file_to = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	if (file_to < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
 	if (read(file_from, buffer, 1024) < 0)
