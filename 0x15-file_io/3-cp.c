@@ -1,5 +1,11 @@
 #include "holberton.h"
 
+/**
+ * main - function that copies file
+ *
+ * @argc: number of argument passed
+ * @argv: argument passed
+ */
 int main(int argc, char *argv[])
 {
 	int file_from, file_to, len = 0;
@@ -10,7 +16,6 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-
 	file_from = open(argv[1], O_RDONLY);
 	if (file_from == -1)
 	{
@@ -18,11 +23,9 @@ int main(int argc, char *argv[])
 			"Error: Can't read from file %s\n", argv[0]);
 		exit(98);
 	}
-
-	file_to = open(argv[2], O_CREAT | O_APPEND | O_WRONLY, 0664);
+	file_to = open(argv[2], O_CREAT | O_APPEND | O_WRONLY, 0644);
 	if (file_to == -1)
 	{
-		close(file_from);
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[1]);
 		exit(99);
 	}
