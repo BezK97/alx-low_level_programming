@@ -28,22 +28,24 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[1]);
 		exit(99);
 	}
-	if (read(file_from, buffer, 1024) < 0)
+	while ((len = read(file_from, buffer, 1024)) > 0)
+	{
+		len2 =  write(file_to, buffer, len);
+		if (len != len2)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			exit(99);
+		}
+	}
+	if (len < 0)
 	{
 		dprintf(STDERR_FILENO,
-			"Error: Can't read from file %s\n", argv[0]);
+			"Error: Can't read from file %s\n", argv[1]);
 		exit(98);
-	}
-	for (; buffer[len] != '\0'; len++)
-		;
-	if (write(file_to, buffer, len) < 0)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[1]);
-		exit(99);
 	}
 	if (close(file_to) == 0)
 		dprintf(STDERR_FILENO, "Error: Can't close %d\n", file_to), exit(100);
-	if (close(file_from) < 0 )
+	if (close(file_from) < 0)
 		dprintf(STDERR_FILENO, "Error: Can't close %d\n", file_from), exit(100);
 	return (0);
 }
