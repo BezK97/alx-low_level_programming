@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int file_from, file_to, len = 0;
+	int file_from, file_to, len, len2;
 	char buffer[1024];
 
 	if (argc != 3)
