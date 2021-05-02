@@ -28,7 +28,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 			free(tmp);
 			return (1);
 		}
-		if (aux == (*head))
+		if (tmp == (*head))
 		{
 			(*head) = (*(*head)).next;
 			(*(*head)).prev = NULL;
@@ -41,8 +41,8 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 			free(tmp);
 			return (1);
 		}
-		(*(tmp).next).prev = (*tmp).prev;
-		(*(tmp).prev).next = (*tmp).next;
+		(*(*tmp).next).prev = (*tmp).prev;
+		(*(*tmp).prev).next = (*tmp).next;
 		free(tmp);
 		return (1);
 	}
