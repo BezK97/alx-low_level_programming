@@ -13,6 +13,11 @@ size_t dlistint_len(const dlistint_t *h)
 
 	while(h != NULL)
 	{
+		if ((*h).prev != NULL)
+		{
+			h = (*h).prev;
+			continue;
+		}
 		len++;
 		h = (*h).next;
 	}
